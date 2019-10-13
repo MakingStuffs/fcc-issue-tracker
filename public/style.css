@@ -1,0 +1,114 @@
+html {
+  font-family: 'open-sans', sans-serif;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 10px;
+  background-image: linear-gradient(#005173, #00a5ea);
+}
+
+.issue {
+  max-width: 45%;
+  display: inline-flex;
+  flex-direction: column;
+  border: 1px solid black;
+  background-color: white;
+  margin: 0.5rem;
+  padding: 1rem;
+  border-radius: 5px;
+}
+.issue > p {
+  font-size: 1rem;
+  margin:0.5rem 0rem;
+}
+.closed {
+  background-color: lightgrey;
+}
+
+.id {
+  font-size: 10.5px;
+}
+.container {
+  width: 70%;
+  margin: 5% auto;
+  background-color: white;
+  padding: 2rem;
+  text-align:center;
+  box-shadow: 0px 0px 10px 1px black;
+}
+.form-container {
+  display:inline-flex;
+  flex-direction: column;
+  width: auto;
+  width: 45%;
+  padding:2rem;
+}
+.form-container > h3 {
+  margin: 1rem;
+}
+.response-container {
+  height: 50%;
+  display: block;
+  max-width: 100%;
+  display: block;
+  word-break: break-word;
+  margin: 1rem;
+}
+.response-container > h3 {
+  margin: 1rem;
+}
+.closeIssue, .deleteIssue {
+  max-width: 45%;
+  display:inline-block;
+  margin:1rem;
+}
+.closeIssue:focus, button:focus, .deleteIssue:focus {
+  outline: none !important;
+}
+.deleteIssue > button {
+  background-image: linear-gradient(to right, #6e0004 50%, #cf001b 50%);
+  background-position: left bottom;
+  background-size: 200% 100%;  
+}
+.deleteIssue > button:hover {
+  background-position: right bottom;
+}
+.date {
+  font-size: 0.8rem !important;
+  margin:0.3rem !important;
+}
+input[type="text"], textarea, button {
+  -webkit-appearance: none;
+  appearance: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin: 0.2rem;
+  border-radius: 5px;
+  border:1px solid black;
+  transition: all 0.4s;
+  width: 100%;
+}
+button {
+  background-image: linear-gradient( to right, #005173 50%, #00a5ea 50%);
+  background-position: left bottom;
+  background-size: 200% 100%;
+  cursor: pointer;
+  color: white;
+  transition: all 0.4s;
+}
+button:hover {
+  background-position: right bottom;
+}
+input[type="text"]:focus, textarea:focus {
+  outline: none;
+  box-shadow: 0px 0px 2px 1px black;
+}
+ol {
+  text-align:left;
+  list-style-position:inside;
+}
